@@ -3,32 +3,141 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My First GitHub Page</title>
-        <!--Booststrap CSS -->
-        < link href="https://cdn.jsdelivr.net/npm/booststrap@5.3.0/dist/css/booststrap.min.css" rel="stylesheet">
-        <!-- Custom CSS -->-
-
-        <link rel="stylesheet" href="styles.css">
+        <title>Navigation bar</title>
+        <style type="text/css">
+            *{
+                text-decoration: none;
+            }
+            .navbar{
+                background-color: black; font-family: calibri; padding-right: 20px;padding-left: 20px;
+            }
+            .navdiv{
+                display:flex ; align-items: center; justify-content: space-between; 
+            }
+            .logo a{
+                font-size: 60px; font-weight: 620; color: white;
+            }
+            li{
+                list-style: none; display: inline-block;
+            }
+            li a{ 
+                color: whitesmoke; font-size: 20px; font-weight: bold; margin-right: 25px;
+            }
+        </style>
      </head>
     <body>
-        <header>
-            <h1>Welcome to My Website!</h1>
-        </header>
+        <header clas="hero">
+            <nav class="navbar">
+                <div class="navdiv">
+                    <div class="logo"><a href="#">TravelCo</a></div>
+                <ul>
+                    <li><a href=index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="destinations.html">Destinations<a></li>
+                    <li><a href="bookings.html">Book Now</a></li>
+                    <button><a href="login.html">Login</a></button>
+                    <button><a href="sign in.html">Sign Up</a></button>
+                </ul>
 
-        <main class="container my-5">
-            <div class="row">
-                <div class="col-md-8">
-                    <h2>Welcome to My Website!<h2>
-                    <p>This is a simple webpage hosted on GitHub Pages.</p>
-                    <p> Here's a picture of a cute cat:</p>
-                    <img src="gettyimages-1387120243-612x612.jpg" alt="A cute kitten" class="img-fluid rounded">
-                    <p class="mt-3>Visit <a href="https://github.com" class="btn btn-primary">GitHub</a> to learn more about coding.</p>
+                </div> 
+
+                </div>
+            </nav>
+
+        
+
+        <main class="hero">
+            <div class="overlay">
+                <div class="hero-text">
+                    <h2 class="hero-title">Explore Africa</h2>
+                    <p class="hero-subtitle">Your Adventure Starts Here</p>
+                    <p class="hero-tagline">Wildlife  *  Adventure  * Culture</p>
                     </div>
                     <div class="col-md-4">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class= "card-title">Did You Know?</h5>
-                                <p class="card-text">GitHub Pages is a free service to host static websites directly from your GitHub repository.</p>
+                                
+
+        <style type="text/css">
+            body{
+                font-family:Arial, sans-serif; color:#333; background-color: #f9f9f9; box-sizing: border-box; max-width: 150%; text-align: center; 
+                margin: 0;
+                padding: 0;
+            }
+            .hero{
+                position: relative;
+                height: 100vh;
+                background: url('5c2f0337524f954d382c555ed9f0a857.jpg') no-repeat center;
+                background-size: cover;
+                width: auto;
+                min-height: 80vh;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);    
+            }
+            .hero-title{
+                font-size: 64px;
+                font-weight: 700;
+                letter-spacing: 2px;
+                color: black;
+            }
+            .hero-subtitle{
+                font-size: 50px;
+                color: black;
+            }
+            .hero-tagline{
+                font: size 40px;
+                color: white;
+                word-spacing: 15px;
+            }
+        </style>
+
+         <section class="destinations">
+                <h2>Top Destinations</h2>
+
+                <div class="grid">
+                    <div class="place">Okavango Delta</div>
+                    <div class="place">Cape Town</div>
+                    <div class="place">Victoria Falls</div>
+                    <div class="place">Anse Lazio</div>
+                    <div class="place">Namib Desert</div>
+                </div>
+            </section>
+            <style type="text/css">
+                .destinations{
+                    padding: 30px;
+                    text-align: left;
+                    color: white
+                }
+            </style>
+
+            <section class="search">
+                <h2>Find Your Destination</h2>
+                <div class="search-box">
+                    <input type="text" placeholder="Destination name">
+                    <select>
+                        <option>Tour Type</option>
+                        <option>Safari</option>
+                        <option>Beach</option>
+                    </select>
+                    <input type="number" placeholder="Min Price">
+                    <input type="number" placeholder="Max Price">
+                </div>
+            </section>
+
+            
+        </style>                        
                             </div>
                         </div>
                     </div>
