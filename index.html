@@ -36,6 +36,13 @@
     background: #333;
     transition: 0.3s;
 }
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+            
+        
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
@@ -55,20 +62,23 @@
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    .nav-links.active {
+    #menu-toggle:checked - .nav-links{
         display: flex;
     }
-
-    .hamburger.active span:nth-child(1) {
+    
+    #menu-toggle:checked + .hamburger span;nth-child(1) {
         transform: rotate(45deg) translate(8px, 8px);
     }
 
-    .hamburger.active span:nth-child(2) {
+    #menu-toggle:checked + .hamburger span:nth-child(2) {
         opacity: 0;
     }
-    .hamburger.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -7px);
+
+    #menu-toggle:checked + .hamburger span:nth-child(3) {
+        transform:rotate(-45deg) translate(7px, -7px);
     }
+}
+        
 
 .navdiv{
     display:flex ; 
@@ -186,11 +196,13 @@ body{
                 <div class="navdiv">
                      <div class="logo"><a href="#">TravelCo</a></div>
 
-                    <div class="hamburger" id="hamburger">
+                    <input type="checkbox" id="menu-toggle">
+
+                    <label for="menu-toggle" class="hamburger">
                         <span></span>
                         <span></span>
                         <span></span>
-                        <span></span>
+                    </label>
 
                       <ul class="nav-links">
                         <li><a href="index.html">Home</a></li>
@@ -259,14 +271,6 @@ body{
         <footer>
             <p>&copy; 2025 Lefhika Kitso</p>
         </footer>
-                            <script>
-                                const hamburger = document.getElementId('hamburger');
-                                const navLinks = document.getElementById(nav-links');
-
-                                hamburger.addEventListener('click', () => {
-                                    hamburger.classList.toggle('active');
-                                })
-                            </script>
 
     </body>
 </html>
