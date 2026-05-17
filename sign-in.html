@@ -5,30 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form in HTML and CSS | Codehal</title>
+    <title>Sign In Form in HTML and CSS | Codehal</title>
     <style type="text/css">
         *{
-            margin: 0; 
-            padding: 0; 
-            box-sizing: border-box; 
-            font-family: 'Poppins', 'Segoe UI', sans-serif;
+            margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif;
         }
-        body{
+        .body{
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+        }
+        .img{   
             background: url('Namib Desert.jpg') no-repeat;
             background-size: cover;
         }
     
         .wrapper{
             width: 420px;
-            background: rgb(255, 255, 255, 0.12);
-            backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px);
-            border: 1px solid rgba(255, 255, 255, 0.25);
-            border-radius: 18px;
+            background: grey;
             color: #fff;
             border-radius: 10px;
             padding: 20px 35px;
@@ -40,6 +35,7 @@
         .wrapper .input-box{
             width: 100%;
             height: 50px;
+            background: grey;
             margin: 30px 0;
         }
         .input-box input{
@@ -48,8 +44,7 @@
             background: transparent;
             border: none;
             outline: none;
-            background: rgba(255, 255, 255, 0.15);
-            border: 3px solid rgba(255, 255, 255, 0.35);           
+            border: 2px solid rgba(255, 255, 255, .2);           
             border-radius: 40px;
         }
         .input-box input::placeholder {
@@ -57,16 +52,13 @@
         }
         .wrapper .btn {
             width: 100%;
-            height: 500px;
+            height: 45px;
             background: #fff;
             border: none;
             outline: none;
-            border-radius: 50px;
+            border-radius: 40px;
             font-size: 20px;
-            color: #1a1a1a;
-            cursor: pointer;
-            padding: 10px;
-            transition: all 0.25s ease;
+            color: #333;
         }
         .wrapper .remember-forgot {
             display: flex;
@@ -98,11 +90,9 @@
             font-weight: 600;
         }
         .wrapper .register-link {
-            font-size: 14px;
+            font-size: 14.5px;
             text-align: center;
-            justify-content: center;
             margin-top: 20px;
-            color: rgba(255, 255, 255, 0.8);
         }
         .register-link p a{
             color: #fff;
@@ -112,33 +102,13 @@
         .register-link p a:hover {
             text-decoration: underline;
         }
-        .back-home {
-            display: inline-block;
-            margin-bottom: 15px;
-            color: #fff;
-            background: rgba(255, 255, 255, 0.15);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 7px;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 500;
-            transition: 0.2s ease;
-        }
-        .back-home:hover {
-            background: rgba(255, 255, 255, 0.25);
-            border-color: rgba(255, 255, 255, 0.6);
-            transform: translate translate(-1px)
-        }
     </style>
 </head>
     <body>
        
     <div class="wrapper">
-        <form action="book.html" method="post">
-            <a href="index.html" class="back-home">Back to Home</a>
-        
-
-            <h1>Login</h1>
+        <form action="">
+            <h1>Sign In</h1>
             <div class="input-box">
                 <input type="text" placeholder="Username" required>
             </div>
@@ -153,8 +123,8 @@
 
             <button type="submit" class="btn">Login</button>
 
-            <div class="register-link">
-                <p>Don't have an account? <a href="#">Register</a></p>
+            <div class="registar-link">
+                <p>Don't have an account> <a href="#">Register</a></p>
             </div>
         </form>
     </div>

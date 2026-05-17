@@ -1,118 +1,49 @@
-!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <style type="text/css">
-
-        </style>
+<!DOCTYPE html>
+<!-- saved from url=(0103)file:///C:/Users/gaoki/OneDrive%20-%20Botswana%20Accountancy%20College/Desktop/my-github-page/book.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Contact Me</title>
+        <link href="https://cdn.jsdelivr.net/npm/booststrap@5.3.0/dist/css/booststrap.main.css" rel="stylesheet">
+        <link rel="stylesheet" href="./booking_files/styles.css">
     </head>
     <body>
-        <section class="section-book">
-            <div class="book">
-                <div class="book_form">
-                    <form action"#" class="form">
-                        <h2 class="heading">
-                            Start Booking Now
-                        </h2>
-                        <div class="form_group">
-                            <input
-                            type="text"
-                            class="form_input"
-                            placeholder="Full Name"
-                            id="name"
-                            required
-                            />
-                            <label for="name" class="form_label">Full Name</label>
-                        </div>
-                         <div class="form_group">
-                            <input
-                            type="email"
-                            class="form_input"
-                            placeholder="Email Address"
-                            id="email"
-                            required
-                            />
-                            <label for="name" class="form_label">Email Address</label>
-                        </div>
-                        <div class="form_group">
-                            <div class="form_radio-group">
-                                <input type="radio"
-                                 class='form_radio-input'
-                                  id='small'
-                                  name="size"
-                                  />
-                                  <label for="small" class='form_radio-label'>
-                                <span class="form_radio-button">
-                                    Small tour group
-                                </span>
-                                  </label>
-                                  </div>
-                        </div> <div class="form_radio-group">
-                                <input type="radio"
-                                 class='form_radio-input'
-                                  id='small'
-                                  name="size"
-                                  />
-                                  <label for="small" class='form_radio-label'>
-                                <span class="form_radio-button">
-                                    Small tour group
-                                </span>
-                                  </label>
-                                </div>
-                         <div class="form_group">
-                            <input
-                            type="text"
-                            class="form_input"
-                            placeholder="Full Name"
-                            id="larg
-                            required
-                            />
-                            <label for="large" class=form_radio-label">
-                                <span class="form_radio-button">
-                                    Large tour group
-                                </span>
-                            </label>
-                        </div>
-                    </div>
-             <div class="form_group">
-                <button class="btn'>Next step &rarr;</button>
-             </div>
+        <div class="wrapper booking-wrapper">
+            <a href="file:///C:/Users/gaoki/OneDrive%20-%20Botswana%20Accountancy%20College/Desktop/my-github-page/login.html" class="back-home">Back to Login</a>
+            <h1>Book Your Trip</h1>
 
-                            <input
-                            type="text"
-                            class="form_input"
-                            placeholder="Full Name"
-                            id="name"
-                            required
-                            />
-                            <label for="name" class="form_label">Full Name</label>
-                        </div>
-                    </form>
-                </div> <div class="form_group">
-                            <input
-                            type="text"
-                            class="form_input"
-                            placeholder="Full Name"
-                            id="name"
-                            required
-                            />
-                            <label for="name" class="form_label">Full Name</label>
-                        </div>
-                    </form>
-                </div> <div class="form_group">
-                            <input
-                            type="text"
-                            class="form_input"
-                            placeholder="Full Name"
-                            id="name"
-                            required
-                            />
-                            <label for="name" class="form_label">Full Name</label>
-                        </div>
-                    </form>
+            <form id="bookingForm">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" required="">
                 </div>
-        </section>
-    </body>
-</html>  
+
+                <div class="input-box">
+                    <input type="email" placeholder="Email" required="">
+                </div>
+
+                <div class="input-row">
+                    <div class="input-box">
+                        <input type="date" required="">
+                    </div>
+                    <div class="input-box">
+                        <input type="time" required="">
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <select required="">
+                        <option value="" disabled="" selected="">Select Service</option>
+                        <option value="flight">Flight</option>
+                        <option value="hotel">Hotel</option>
+                        <option value="tour">Tour Package</option>
+                    </select>
+                </div>
+                
+                <div class="input-box">
+                    <input type="number" placeholder="Guests" min="1" max="8" required="">
+                </div>
+
+                <button type="submit" class="btn">Confirm Booking</button>
+            </form>
+        </div>
+    </body></html>

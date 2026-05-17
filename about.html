@@ -1,16 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
+    
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Me</title>
-<!-- Booststrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/booststrap@5.3.0/dist/css/booststrap.min.css" rel="stylesheet">
-<!-- Custom CSS -->
-<link rel="stylesheet" href="style.css">  
+    <title>About Me</title>
+    <style type="text/css">
+body{
+    font-family:Arial, sans-serif; 
+    color:#333; 
+    background-color: #f9f9f9; 
+    box-sizing: border-box; 
+    max-width: 150%; 
+    text-align: center; 
+    margin: 0;
+    padding: 0;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);    
+}
+.hero-subtitle{
+    font-size: 30px;
+    color: black;
+}
+.hero-tagline{
+    font: size 40px;
+    color: black;
+    word-spacing: 15px;
+}
+*{
+    text-decoration: none; 
+}
+.navbar{
+    background-color: black; 
+    font-family: calibri; 
+    padding-right:15px; 
+    padding-left: 15px; 
+}
+.navdiv{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 15px;
+}
+.logo a{
+    font-size: 60px; 
+    font-weight: 620; 
+    color: white;
+}
+li{
+    list-style: none; 
+    display: inline-block;
+}
+li a{ 
+    color: whitesmoke; 
+    font-size: 20px; 
+    font-weight: bold; 
+    margin-right: 25px;
+}
+.hero {
+    width: 100%; 
+    margin-top: 0;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #000;
+}
+.hero{
+    position: relative;
+    background: url('magazine-botswanana-okavango-delta-wildlife-jewel-flooded-delta-conscious-explorer.webp') no-repeat center;
+    background-size: cover;
+    width: auto;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+*{
+    font-size:x-large; 
+    color: white; 
+    size: 20px; 
+    padding: 0; 
+}
+.hero-text{
+    margin: auto; 
+    padding: 20px 80px; 
+    text-align: left; 
+    padding: 0 100px;
+}
+.about-title{
+    font-size: 65px; 
+    font-weight: 700; 
+    color: #fff;
+}            
+        </style>
 </head>
-<body>
-    <header class="contain">
+    <body>
+        <header class="contain">
             <nav class="navbar navbar-expand-lg navbar-dark bd-dark">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">My Website</a>
@@ -26,87 +129,40 @@
                                 <a class="nav-link" href="about.html">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a
-                             </li>
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
                         </ul>
-                         <style type="text/css">
-            *{
-                text-decoration: none;
-            }
-            .navbar{
-                background-color: black; font-family: calibri; padding-right: 20px;padding-left: 20px;
-            }
-            .navdiv{
-                display:flex ; align-items: center; justify-content: space-between; 
-            }
-            .logo a{
-                font-size: 60px; font-weight: 620; color: white;
-            }
-            li{
-                list-style: none; display: inline-block;
-            }
-            li a{ 
-                color: whitesmoke; font-size: 20px; font-weight: bold; margin-right: 25px;
-            }
-        </style>
                     </div>
                 </div>
             </nav>
         </header>
-    <main class="hero">
+    <main class="hero about-hero">
         <div class="overlay">
             <div class="hero-text">
         <h2 class="about-title">About Us</h2>
         
-        <h3 class="about-subtitle">TravelCo</h3>
+        <h3 class="about-content">TravelCo</h3>
         <p>We are a booking company in Botswana, specializing in creating and organizing African safari and cultural experiences</p>
 
         <p>At TravelCo, we don't just plan and organize your stay - we awaken your sense of wonder. Based in Maun, Botswana, we specialize in handcrafed tours and safari experiences across Southern Africa's best and most iconic destinations.</p>
 
-        <style type="text/css">
-            body{
-                font-family: Arial, Helvetica, sans-serif; color:black; text-align: center; box-sizing: border-box;
-            }
-             .hero{
-                position: relative;
-                height: 100vh;
-                background: url('magazine-botswanana-okavango-delta-wildlife-jewel-flooded-delta-conscious-explorer.webp') no-repeat center;
-                background-size: cover;
-                width: auto;
-                min-height: 80vh;
-                flex-direction: column;
-                justify-content: center;
-                width: 100%;
-                margin: 0;
-                padding: 0;
-            }
-            .overlay {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0, 0.7);
-            }
-            *{
-                font-size:xx-large; color: white; size: 20px;
-            }
-            .hero-text{
-                margin: auto; padding: 20px 80px; text-align: center;
-            }
-            .about-title{
-                font-size: 65px; font-weight: 700; color: #fff;
-            }
-            
-        </style>
+        <hr class="divider">
 
+        <h2>Our Mission</h2>
+        <p>To deliver unforgettable, responsible safari adventures that celebrate Southern Africa's wild beauty while empowering local communities.</p>
+        
+        <hr class="divider">
+
+        <h2>Why TravelCo</h2>
+        <ul class="checklist">
+            <p>100% locally owned and operated<br>
+               Custom itineraries, no cookie-cutter tours<br>
+               Export guides with deep knowledge on the Safari<br>
+               Commitment to conservation</p>
+        </ul>
+
+        <hr class="divider">
+    
     </main>
-
-    <footer>
-        <p>&copy; 2025 Lefhika Kitso</p>
-    </footer>
-     <!-- Booststrap JS and dependencies -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/booststrap@5.3.0/dist/js/booststrap.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book Your Trip | Travel Booking</title>
+        <style type="text/css">
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fdf8f4;
+    background-image: radial-gradient(circle at 10px 10px, rgba(255, 108, 0, 0.08) 1.5px);  
+    background-size: 24px 24px;
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;      
+    min-height: 100vh;         
+}
+.booking-wrapper {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 50px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+.input-row {
+    display: flex;
+    gap: 16px;
+}
+.input-row .input-box {
+    flex: 1
+}
+h1 {
+    font-size: 32px;
+    font-style: 700;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.subtitle {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 32px;
+    font-size: 15px;
+}
+.input-row{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+.input-box{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.input-box label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #374151;
+}
+.input-box select {
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: all 0.2s; 
+}
+.input-box input:focus,
+.input-box select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
+}
+.input-box input::placeholder {
+    color: #9ca3af;
+}
+button {
+    width: 100%;
+    padding: 14px;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 10px;
+}
+button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+.success-msg {
+    text-align: center;
+    display: none;
+    margin-top: 24px;
+    padding: 14px 18px;
+    color: #065f46;
+    border: 1px solid #10b981;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+@media (max-width: 640px) {
+    .booking-wrapper {
+        margin: 20px;
+        padding: 24px;
+    }
+    .input-row {
+        flex-direction: column;
+    }
+}
+        </style>
+    </head>
+    <body>
+        </header>
+            <nav class="navbar navbar-expand-lg navbar-dark bd-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">My Website</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="booking-wrapper">
+            <h1>Book Your Trip</h1>
+            <p class="subtitle">Fill in the details and we'll confirm your booking</p>
+                
+            <form>
+                <div class="bookingForm">
+                    <div class="input-box">
+                        <label>Full Name *</label>
+                        <input type="text" placeholder="e.g, John Gonzalez" required>
+                    </div>    
+                </div>   
+
+                <div class="input-row">    
+                    <div class="input-box">
+                        <label>Email Address *</label>
+                        <input type="email" placeholder="you@email.com" required>
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-box">
+                        <label>Travel Date</label>
+                        <input type="date" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Select Service</label>
+                        <select>
+                            <option>Flight + Hotel</option>
+                            <option>Hotel only</option>
+                            <option>Tour Package</option>
+                            <option>Car rental</option>
+                            <option>Flight only</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="input-box">
+                    <label>Number of Guests</label>
+                    <input type="number" min="1" value="1">
+                </div>   
+
+                <button type="submit">Confirm Booking</button>
+                <p class="success-msg" id="successMsg">
+                    Booking confirmed! Get ready for an adventure.
+                </p>
+
+                <p class="success-msg" id="successMsg">
+                    <svg width="18" height="18" viewBox="0 0 20 20" fill="none" style="vertical-align: middle; margin-right: 6px;">
+                        <path d="M16.6666 5L7.49998 14.1667L3.33331 10" stroke="065f46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    ✅ Booking confirmed! Get ready for an adventure.
+                </p>
+
+                <div class="checkbox-box">
+                    <input type="checkbox" id="agree" required>
+                    <label for="agree">I agree to the Terms and Conditions</label>
+                </div>
+
+                <script>
+                    document.getElementById("bookingForm").addEventListener("submit", function(e) {e.preventDefault();
+                        document.getElementById("successMsg").style.display = "block";
+                        this.reset();
+                })
+                </script>
+            </form>
+        
+
+
+            <footer>
+                <p>@ 2026 TravelCo</p>
+            </footer>
+        </div>
+    </body>

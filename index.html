@@ -6,149 +6,195 @@
         <title>Navigation bar</title>
         <style type="text/css">
             *{
-                text-decoration: none; box-sizing: border-box;
-            }
-            .navbar{
-                background-color: black; font-family: calibri; padding-right:20px;padding-left: 20px;
-            }
-            .navdiv{
-                display:flex ; align-items: center; justify-content: space-between; 
-            }
-            .logo a{
-                font-size: 60px; font-weight: 620; color: white;
-            }
-            li{
-                list-style: none; display: inline-block;
-            }
-            li a{ 
-                color: whitesmoke; font-size: 20px; font-weight: bold; margin-right: 25px;
-            }
-            body, html{
-                margin: 0;
-                padding: 0;
-                overflow-x: hidden;
-            }
-            img, video{
-                max-width: 100%;
-                height: auto;
-            }
-        </style>
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    color: #1f2937; 
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.85); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    font-family: calibri; 
+    padding-right:15px; 
+    padding-left: 30px; 
+    padding: 8px 20px;
+}
+.navdiv{
+    display:flex ; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 15px;
+}
+.logo a{
+    font-size: 60px;
+    font-weight: 620; 
+    color: black;
+}
+li{
+    list-style: none; 
+    display: inline-block;
+}
+li a{ 
+    color: black; 
+    font-size: 20px; 
+    font-weight: bold; 
+    margin-right: 25px;
+}
+.hero {
+    width: 100%; margin-top: 0;
+}
+.folder-btn{
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    text-decoration: none; 
+    padding: 10px 15px; 
+    display: block; 
+    cursor: pointer; 
+    background: none; 
+    border: none;
+    font-family: calibri;
+}
+.folder-btn:hover {
+    background-color: #333;
+    border-radius: 5px;
+}
+body{
+    font-family: 'Inter', sans-serif; 
+    color:#333; 
+    background-color: #f9f9f9; 
+    box-sizing: border-box; 
+    max-width: 150%; 
+    text-align: center; 
+    margin: 0;
+    padding: 0;
+}
+.hero-title{
+    line-height: 3;
+}
+.hero-subtitle{
+    line-height: 3;
+}
+.hero-tagline{
+    line-height: 3;
+}
+.home-hero{
+    position: relative;
+    height: 100vh;
+    min-height: 80vh;
+    background: url('5c2f0337524f954d382c555ed9f0a857.jpg') no-repeat center;
+    background-size: cover;
+    display: flex;
+    width: auto;
+    min-height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.12);    
+}
+.hero-title{
+    font-size: 70px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.7);
+    margin-bottom:15px ;
+}
+.hero-subtitle{
+    font-size: 22px;
+    color: white;
+    text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.6);
+}
+.hero-tagline{
+    font: size 40px;
+    color: #ff6b35;
+    word-spacing: 15px;
+    text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.6);
+}
+.destinations-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+</style>
      </head>
     <body>
-        <header clas="hero">
+        <header>
             <nav class="navbar">
                 <div class="navdiv">
-                    <div class="logo"><a href="#">TravelCo</a></div>
-                <ul>
-                    <li><a href=index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="destinations.html">Destinations<a></li>
-                    <li><a href="bookings.html">Book Now</a></li>
-                    <button><a href="login.html">Login</a></button>
-                    <button><a href="sign in.html">Sign Up</a></button>
-                </ul>
+                     <div class="logo"><a href="#">TravelCo</a></div>
 
-                </div> 
+                      <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="destinations.html">Destinations<a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="book.html">Book Now</a></li>
+                      </ul>
+
+                     </div>
+            </nav>
+        </header>    
+
 
                 </div>
             </nav>
-
-        
-
-        <main class="hero">
+            <main class="hero home-hero">
             <div class="overlay">
                 <div class="hero-text">
                     <h2 class="hero-title">Southern Africa Uncovered</h2>
                     <p class="hero-subtitle">From the Cape Point to the Okavango Delta to Victoria Falls - Your Adventure Starts Here</p>
-                    <p class="hero-tagline">Wildlife  *  Adventure  * Culture</p>
-                    </div>
+
+                    <a href="destinations" class="cta-btn">Explore Destinations</a>
                     <div class="col-md-4">
                         <div class="card">
-                            <div class="card-body">
-                                
+                            <div class="card-body">         
+                
+         <li class="folder">
+          <button class="folder-btn"></button>
+          <div class="destinations-list">
+            <a href="destinations.html#okavango">Okavango Delta</a>
+            <a href="destinations.html#cape-town">Cape Town</a>
+            <a href="destinations.html#namib">Namib Desert</a>
+            <a href="destinations.html#victoria-falls">Victoria Falls</a>
+            <a href="destinations.html#zanzibar">Zanzibar</a>
+            <a href="destinations.html#drakensberg">Drakensberg</a>
+          </div>
+        </li>
 
-        <style type="text/css">
-            body{
-                font-family:Arial, sans-serif; color:#333; background-color: #f9f9f9; box-sizing: border-box; max-width: 150%; text-align: center; 
-                margin: 0;
-                padding: 0;
-            }
-            .hero{
-                position: relative;
-                height: 100vh;
-                background: url('5c2f0337524f954d382c555ed9f0a857.jpg') no-repeat center;
-                background-size: cover;
-                width: auto;
-                min-height: 80vh;
-                flex-direction: column;
-                justify-content: center;
-                width: 100%;
-                margin: 0;
-                padding: 0;
-            }
-            .overlay {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0, 0.7);    
-            }
-            .hero-title{
-                font-size: 75px;
-                font-weight: 800;
-                letter-spacing: 2px;
-                color: black;
-            }
-            .hero-subtitle{
-                font-size: 30px;
-                color: white;
-            }
-            .hero-tagline{
-                font: size 40px;
-                color: white;
-                word-spacing: 15px;
-            }
-        </style>
-
-         <section class="destinations">
-                <h2>Top Destinations</h2>
-
-                <div class="grid">
-                    <div class="place">Okavango Delta</div>
-                    <div class="place">Cape Town</div>
-                    <div class="place">Victoria Falls</div>
-                    <div class="place">Anse Lazio</div>
-                    <div class="place">Namib Desert</div>
                 </div>
             </section>
             <style type="text/css">
                 .destinations{
+                    display: flex;
+                    justify-content: center;
+                    gap: 15px;
+                    flex-wrap: wrap;
                     padding: 30px;
                     text-align: left;
                     color: white
                 }
-            </style>
-
-            <section class="search">
-                <h2>Find Your Destination</h2>
-                <div class="search-box">
-                    <input type="text" placeholder="Destination name">
-                    <select>
-                        <option>Tour Type</option>
-                        <option>Safari</option>
-                        <option>Beach</option>
-                    </select>
-                    <input type="number" placeholder="Min Price">
-                    <input type="number" placeholder="Max Price">
+            </style>    
+                    </div>
                 </div>
             </section>
-            <style type="text/css">
-                .search{
-                    padding: 20px; color: white;
-                }
-            </style>"
 
             
         </style>                        
@@ -161,10 +207,6 @@
         <footer>
             <p>&copy; 2025 Lefhika Kitso</p>
         </footer>
-        
-        <!--Booststrap JS and dependencies -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd.popper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/booststrap@5.3.0/dist/js/booststrap.min.js"></script>
 
     </body>
 </html>
